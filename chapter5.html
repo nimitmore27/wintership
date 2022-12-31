@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinterShip - Chapter 5</title>
+    <link rel="stylesheet" href="css/chapter5.css">
+</head>
+<body>
+    <!-- we will make a navbar in this chapter using our css properties -->
+    <!-- using nav tag to make navbar -->
+    <nav class="navbar">
+        <a href="chapter4.html">Previous Chapter</a>
+        <h1>WinterShip</h1>
+        <a href="chapter6.html">Next Chapter</a>
+    </nav>
+    <div class="container">
+        <h1 class="title">CSS Position Properties & Z Index</h1>
+        <div class="mygrid">
+            <section class="section section1">
+                <h2>Section 1 : Position Relative</h2>
+                <div class="rec">
+                    Position relative
+                    it will move relative to its current Position and won't leave its original position
+                </div>
+            </section>
+            <section class="section section2">
+                <h2>Section 2 : Position Sticky</h2>
+                <div class="rec">
+                    Position Sticky
+                    It will also move relative to its current position and won't leave its original position
+                </div>
+                scroll the page to check the effect
+                the rectangle will be sticky inside the container and won't leave the container
+            </section>
+            <section class="section section3">
+                <h2>Section 3 : Position Absolute</h2>
+                <div class="rec rec1">
+                    Position absolute
+                    It will move relative to the viewport or we can say screen size
+                </div>
+                <div class="rec">normal div, as the rec1 division has come out of the HTML flow the positionof the rec1 is taken by this rectangle,
+                    <p>the rec1 rectangle has given a position absolute and calculated top value so its been placed inside this section otherswise the rec will float in its current position if values are not provided</p>
+                </div>
+            </section>
+            <section class="section section4">
+                <h2>Section 4 : Position Fixed</h2>
+                <div class="rec">
+                    This is position fixed from Section 4 <br>
+                    Position Fixed
+                    In this Position it will also leave its current position and come out from the HTML flow, and stay in its assigned position irrespective of scrolling
+                </div>
+                You already have seen how its working
+            </section>
+            <section class="section section5">
+                <h2>Section 5 : Position Absolute, Relative to ancestor</h2>
+                <p>
+                    Here section parent could have any position other than static to make this work
+                </p>
+                <div class="rec">
+                    Position absolute
+                    which will be relative to its closest parent ancestor
+                    <p>This rectangle is 50px above from bottom relative to section 5</p>
+                </div>
+                <p>
+                    the rectangle can be position by giving its parent any position
+                </p>
+            </section>
+            <section class="section section6">
+                <h2>Section 6 : Z-Index</h2>
+                <h3>Z Index</h3>
+                <p>The 1st element will have lower z-index than its next element so that 1st will be overlapped by 2nd and so on</p>
+                <p>We can manually set Z-index to any value to change overlapping</p>
+                <p>Because of that Z-index, The fixed floating rectangle is getting overlapped by the section 6 as well as our rainbow</p>
+                <div class="recs rec1"></div>
+                <div class="recs rec2"></div>
+                <div class="recs rec3"></div>
+                <div class="recs rec4"></div>
+                <div class="recs rec5"></div>
+                <div class="recs rec6"></div>
+                <div class="recs rec7"></div>
+                <p>Try Changing Z Index of elements to see result</p>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div><a href="chapter4.html">Previous Chapter</a></div>
+        <div>
+            <a href="css/chapter5.css">Check CSS File</a>
+        </div>
+        <div><a href="chapter6.html">Next Chapter</a></div>
+    </footer>
+</body>
+</html>

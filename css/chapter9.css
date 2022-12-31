@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    min-height: 88vh;
+    padding: 1vh 3vw;
+    background-color: beige;
+    font-family: serif;
+}
+/* applying same css for multiple elements */
+#demo , .mypara{
+    width: max-content;
+    margin: 10px;
+    padding: 10px ;
+    border: 1px solid blue;
+    border-radius: 8px;
+    box-shadow: 6px 5px 8px 0 rgb(98 98 98);
+}
+.container button{
+    padding: 1vh 1vw;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.myol{
+    display: flex;
+    gap: 5vw;
+    justify-content: flex-start;
+}
+/* this selector will select all the li inside the ol that includes li inside the ul also */
+/* .myol li {} */
+
+/* using direct child selector */
+.myol > li{
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1vw 3vw;
+}

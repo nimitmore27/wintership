@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinterShip - Chapter 8</title>
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        .container{
+            width: 100%;
+            padding: 1vh 3vw;
+            background-color: beige;
+            font-family: serif;
+        }
+        .container p,li{
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar center-text">
+        <a href="chapter7.html">Previous Chapter</a>
+        <h1>WinterShip</h1>
+        <a href="chapter9.html">Next Chapter</a>
+    </nav>
+    <div class="container">
+        <h1 class="title center-text">JS Variables, Data Types, Functions </h1>
+        <h3>We Have Three Types Of JS Variable Declarations</h3>
+        <ol>
+            <li>
+                <b>var :</b> Variables declared by using var keyword <b>can be redeclared again</b> as well as we <b>can
+                    assign </b> new value to it.
+            </li>
+            <li>
+                <b>let :</b> Variables declared by using let keyword <b>cannot be redeclared again</b> but we <b>can
+                    assign </b> new value to the variable.
+            </li>
+            <li>
+                <b>const :</b> Variable declared by using const keyword <b>cannot be redeclared</b> as well as we
+                <b>cannot assign </b> new value to the variable.
+            </li>
+        </ol>
+        <br>
+        <h3>Data Types in JavaScript</h3>
+        <p>On this topic there we can have a entire chapter to answer but concluding in short answer,<br> In JavaScript
+            we have Number, String, Boolean, Object, Undefined, NULL as the JavaScript Data Types </p>
+        <p>Using these data types we can create variables in JS to store these type of data </p>
+        <br>
+        <h3>Functions In JavaScript</h3>
+        <p>There are two types of Functions in JavaScript</p>
+        <ol>
+            <li>
+                <b> Regular Functions </b>: Regular Functions can be defined by using keyword <b>Function</b> and there
+                value can be return by using keyword <b>return</b>.
+                <br>It was necessary to use <b>function</b> & <b>return</b> keyword to declare a variable in ES5, But
+                now in ES6 return as well as function keyword is not necessary
+                <br>
+                Syntax : <br>
+                <pre>
+    function func_name(arg1,arg2,...argn){
+        function_body
+    }
+                </pre>
+            </li>
+            <li>
+                <b>Lambda / Anonymous Function : </b> As the name suggest these functions are Anonymous as they dont
+                have any name. <br> These function can be assigned to a variable and we can access using that variable.
+                <br> Lambda functions can be divided into 2 types
+                <ul type="square">
+                    <li>
+                        <b>using function keyword :</b><br>
+                        Syntax : <br>
+                        <pre>
+    function (arg1,arg2,...argn){
+        function_body
+    }                   </pre>
+                    </li>
+                    <li>
+                        <b>Arrow Function : </b> <br>
+                        Syntax : <br>
+                        <pre>
+    (arg1,arg2,...argn)=>{
+        function_body
+    }
+                        </pre>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <footer class="footer center-text">
+        <div><a href="chapter7.html">Previous Chapter</a></div>
+        <div><a href="chapter9.html">Next Chapter</a></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+/* using universal selector to reset default margin and padding of the browser */
+*{
+    /* margin is the distance outside of the element or the outside distance from the edge of the element */
+    /* margin with single value will apply value on all 4 sides */
+    margin: 0;
+
+    /* margin with 2 values are considered as values for "top-bottom left-right" */
+    /* margin: top-bottom left-right; */
+    margin: 0 0;
+    
+    /* margin with 4 values are considered as values in clockwise direction starting from top */
+    /* margine : top right bottom left */
+    margin: 0 0 0 0;
+
+    /* Similar value assignment is used for most of css properties such as padding border, border radius, etc */
+
+    /* padding is the distance inside of the element or the inside distance between the edge of the element and the content of the element*/
+    padding: 0;
+
+    /* box sizing is the property in which the dimensions provided are preserved*/
+    box-sizing: border-box;
+}
+#mydiv1{
+    width: 100%;
+
+    /* display properties is covered in further chapters currently display:flex property is used to organize the information as desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid black;
+    
+    padding: 10px;
+}
+.rectangle{
+    width: 150px;
+    height: 100px;
+}
+.rec1{
+    border: 5px solid blue;
+    box-sizing: border-box;
+}
+.rec2{
+    border: 5px solid red;
+    box-sizing: content-box;
+}
+
+/* !important in css */
+.sq1{
+    /* class selector has lower specificity */
+    /* width: 200px;
+    height: 200px; */
+    width: 200px!important;
+    height: 200px!important;
+}
+#square{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black ;
+    /*  */
+    margin: 0 auto;
+}
+
+.container{
+    /* vh & vw stands for viewport height and width respectively there are css units */
+    /* em, rem, vh, vw, px, %, pc etc. are css units use them as you need to make your page responsive  */
+    height: 60vh;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.square1{
+    height: 300px;
+    width: 300px;
+    border: 1px solid green;
+}
+.square2{
+    height: 200px;
+    width: 200px;
+    border: 5px solid blue;
+}
+.sq2{
+    margin: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinterShip - Chapter 3</title>
+    <!-- all css of chapter3.html is written inside chapter3.css -->
+    <link rel="stylesheet" href="css/chapter3.css">
+</head>
+<body>
+    <header>
+        <!-- ./ represents current folder's index file -->
+        <!-- ../ represents going backward in a folder -->
+        <a href="chapter2.html"> &lt;-Chapter 2</a>
+        <!-- <a href="../"> &lt;-Chapter 1</a> -->
+        <a href="chapter4.html">Chapter 4 -></a>
+    </header>
+    <div id="mydiv1">
+        <div class="rectangle rec1">
+            rectangle with box sizing : border-box;
+            <br>
+            here dimensions are 150 x 100
+        </div>
+        <div class="rectangle rec2">
+            rectangle with box sizing : content-box; (default)
+            <br>
+            here dimensions are 160 x 110
+            <!-- as 5px border is added on all 4 sides therefore 150+5+5 x 100+5+5 -->
+        </div>
+    </div>
+    <div id="square" class="sq1">
+        css is applied by class selector because of !important 
+    </div>
+    <div class="container">
+        <div class="square1">
+            <div class="square2">
+                150 x 150
+            </div>
+            margin is not applied so the text is sticking to the square
+        </div>
+        <div class="square1">
+            <div class="square2 sq2">
+                150 x 150
+                <br>
+                <b>margin</b> is the distance between border and outer content
+                <br>
+                <b>padding</b> is the distance between border and inside content
+            </div>
+            margin is applied so the text isn't sticking to the square
+        </div>
+    </div>
+    <a href="css/chapter3.css">Check CSS file</a>
+    <footer style="height: 15vh;">
+        <a href="chapter2.html"> &lt;- Chapter 2</a>
+        <a href="chapter4.html">Chapter 4 -></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* CSS File is treated as text file in browsers */
+
+/* using tag selector to apply css on body of the webpage */
+body{
+    background-color: rgb(183, 255, 231);
+}
+
+/* using Id selector to apply css on the div having id */
+#mydiv{
+    display: flex;
+}
+
+/* using  classes to add css properties to mutiple elements at once where multiple elements are given same class as well as same element has multiple classes */
+.second-li{
+    color: red;
+}
+
+.bgred{
+    background-color: red;
+    color: white;
+}
+
+footer{
+    height: 15vh;
+}
+
+/* More about various CSS properties will be discussed in chapter3 */

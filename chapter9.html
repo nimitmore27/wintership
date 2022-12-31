@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinterShip - Chapter 9</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/chapter9.css">
+</head>
+<body>
+    <nav class="navbar center-text">
+        <a href="chapter8.html">Previous Chapter</a>
+        <h1>WinterShip</h1>
+        <a href="chapter10.php">Next Chapter</a>
+    </nav>
+    <div class="container">
+        <!-- we have changed the paragraph color using js -->
+        <!-- some styling related JS is written in chapter9.js so check it out -->
+        <p id="demo">This is paragraph with ID "demo"</p>
+        <button onclick="func1()">Change Demo Text</button>
+        <button onclick="func2()">Revert Demo Text</button>
+        <br>
+        <p class="mypara">This is a paragraph with CLASS "mypara"</p>
+        <button onclick="func3()">change mypara using classname</button>
+        <button onclick="func4()">Revert mypara using classname</button>
+        <h3>Events In JS</h3>
+        <p>we can add event listner for this events</p>
+        <p>We can use addEventListener("event",callback()) method to respond to this events.</p>
+        <ol class="myol">
+           <li><b>Mouse Events :</b>
+            <ul type="square">
+                <li>click</li>
+                <li>dblclick</li>
+                <li>mouseenter</li>
+                <li>mouseleave</li>
+                <li>mouseover</li>
+            </ul>
+           </li> 
+           <li><b>Keyboard Events :</b>
+            <ul type="square">
+                <li>keypress</li>
+                <li>keydown</li>
+                <li>keyup</li>
+            </ul>
+           </li>
+           <li><b>Form Events :</b>
+            <ul type="square">
+                <li>change</li>
+                <li>submit</li>
+                <li>keyup</li>
+            </ul>
+           </li>
+        </ol>
+        <br> <br>
+        <p>Creating and appeding elements using JavaScript to belown given UL by using id "myul" from taking input value from the textbox</p>
+        <input type="text" placeholder="Enter Data For UL" id="inptxt" class="mypara">
+        <button id="addli">Add to list</button>
+        <p>Deleting elements using JavaScript by clicking List Item</p>
+        <br>
+        <p><b> NOTE : Refreshing this page will remove added elements </b></p>
+        <ol id="myol">
+            <li>This is list item 1</li>
+            <li>This could be an example of To Do List</li>
+        </ol>
+        <br>
+        <h1 class="title center-text">Check JS File for details</h1>
+    </div>
+    <footer class="footer center-text">
+        <div><a href="chapter8.html">Previous Chapter</a></div>
+        <div>
+            <a href="js/chapter9.js">Check JavaScript File</a>
+        </div>
+        <div><a href="chapter10.php">Next Chapter</a></div>
+    </footer>
+</body>
+<script>
+    console.log("This is Internal JS")
+    console.log("Anything written in console will be written here")
+</script>
+<script src="js/chapter9.js"></script>
+</html>

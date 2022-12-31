@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    padding-top: 12vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 1vh 2vw;
+    background-color: bisque;
+}
+.center-text{
+    text-align: center;
+}
+.container .mylist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+.container .mylist > li{
+    display: inline-block;
+    width: max-content;
+    padding: 2vh 3vw;
+    font-family: sans-serif;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 350px;
+}
+/* Using attribute selector for selecting a input tag which has type button */
+.container .mylist li input[type='button']{
+    border-radius: 8px;
+    border: none;
+    padding: 1vh 2vw;
+    cursor: pointer;
+    font-weight: 700;
+}
+.container .mylist li input[type='button']:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.container .mylist li ul{
+    list-style-type: square;
+}

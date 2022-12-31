@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* keeping higher z-index so no other element can overlap it */
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 1.2rem;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: rgb(255, 183, 16);
+    text-decoration: revert;
+}
+.footer{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(123, 123, 123);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer a:hover{
+    color: rgb(255, 183, 16);
+    text-decoration: revert;
+}
+
+body{
+    padding-top: 12vh;
+}
+
+.center-text{
+    text-align: center;
+}

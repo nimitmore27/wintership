@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background-color: bisque;
+}
+.row{
+    width: 90%;
+    background-color: aquamarine;
+    margin: 10px;
+}
+.rec{
+    height: 100px;
+    width: 200px;
+}
+/* display properties are predefined to all elements but we can change them as per our requirement */
+/* in display block elements will occupy full width even their width is set to perticular value */
+/* so the rectangles placed one after another */
+/* div tag has display as block as default */
+.rec.rectangle1{
+    display: block;
+    background-color: red;
+
+}
+.rec.rectangle2{
+    display: block;
+    background-color: green;
+}
+
+
+/* changing display to inline */
+/* so rectangle3 wont be displayed */
+/* display inline placing all inline elements in same line */
+.rectangle3.rec{
+    display: inline;
+    background-color: red;
+}
+.rectangle4.rec{
+    display: inline;
+    background-color: green;
+}
+.rectangle5.rec{
+    display: inline;
+    background-color: pink;
+}
+/* both elements have inline block so they are placed one after another as inline elements and they can be given height and width because of display block properties  */
+.rec.rectangle6{
+    display: inline-block;
+    background-color: blueviolet;
+}
+.rectangle7.rec{
+    display: inline-block;
+    background-color: pink;
+}
+
+/* using display flex to center all elements inside it*/
+
+.parent{
+    width: 500px;
+    height: 200px;
+    /* margin auto will horizontally center an element */
+    margin: auto;
+    background-color: wheat;
+}
+
+.flex.parent{
+    display: flex;
+    flex-direction: row;
+    /* the default direction of flex is row so the elements are placed one after another */
+    /* to separate the elements we don't need to give margin we can simply use gap property to give spacing between elements */
+    gap: 10px;
+    /* using align-items property we can align elements on horizontal axis */
+    /* using inspect element we have align them as we want */
+    align-items: center;
+    /* justify-content property can align elements on vertical axis */
+    justify-content: center;
+    /* using this two properties we can center all elements at the center of the box container */
+    /* there are different more properties in display flex which you should explore */
+
+    /* when used flex-direction column the elements will be arranged one below another */
+    flex-direction: column;
+
+    /* when to use flex ? */
+    /* while moving elements in one flow or align them accordingly we can utilize power of display flex */
+}
+.child{
+    height: 90px;
+    width: 90px;
+    background-color: red;
+}
+
+/*  */
+
+/* Display grid */
+.grid.parent{
+    display: grid;
+    /* the default direction of placing grid items is columnwise so grid items will be below each other */
+
+    /* just like flex we can center grid items using align and justify properties , but to center the elements at the center of the box i.e. vertically as well as horizontally , we have a special property as place-items */
+    place-items: center;
+
+    /* the following two properties allows user to specify the column/row sizing and then grid items will be placed according to the template space given to them */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: auto auto auto; */
+    /* the above example tells the grid will have 3 columns and 3 rows which will have column/row size as auto so the grid items will get size as they required */
+
+    /* the following properties will be applied to those elements for which we haven't specified the grid row / column */
+    /* grid-auto-rows: ; */
+    /* grid-auto-columns: ; */
+
+}
+/* Display flex and grid will have a block level scope so they took the full width of the screen */
+
+/* the inline-block was the combination of display block and inline so that the elememts can be treated as block as well as inline */
+
+/* similar to inline-block we have inline-flex, inline-grid which are combination of the specified properties */

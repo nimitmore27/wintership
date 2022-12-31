@@ -1,0 +1,145 @@
+/* CSS Is Already Reset Because of default.css */
+
+.container{
+    width: 100%;
+    background-color: beige;
+}
+.title{
+    padding: 5px 0;
+}
+
+.mygrid{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+.section{
+    width: 90%;
+    height: 500px;
+    border: 1px solid black;
+}
+.sq{
+    width: 150px;
+    height: 150px;
+    margin: 25px 0;
+    background-color: green;
+    color:white;
+}
+.section1 .sq1{
+    /* hover over the function/property value to get syntax */
+    transform: rotate(45deg);
+    /* for rotate is not working because translate is overriding the previous rotate */
+    transform: translate(100px,0);
+    /* to use multiple transform we need to separate multiple properties by white-space */
+    transform: translate(100px,0) rotate(45deg);
+    /* In HTML X axis positive values represent from left to right and,  negative values represent from right to left  */
+    /* For Y axis positive values means top to bottom and, negative values means from bottom to top */
+}
+.section1 .sq2{
+    /* This transform properties now can be used individually but always check for browser support */
+    /* Major advantage of using individually is they can't override each other */
+    rotate: -45deg;
+    translate: 50px 0;
+}
+.section1 .sq4, .section1 .sq5{
+    translate: 460px -350px;
+    rotate: 45deg;
+}
+/* Using transform property with positon to align an element to exact center */
+.section1{
+    position: relative;
+}
+.section1 .sq3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Position top & left 50% will place the top left vertex of the box/element at the exact middle of the parent container/screen (if parent container is not positioned relative then screen)  */
+    /* to place the entire element at the center, we need to move it in other (negative) direction 50% of its width & height*/
+    translate: -50% -50%;
+    background-color: red;
+    /* NOTE : Position properties use % relative to parent that is container/screen , where as in translate property the % is related to width and height of the element  */
+}
+.section2 ol{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+.section2 .sq1{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* use above syntax or can define separate properties  */
+    animation-name: movingbox;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.section2 .sq2{
+    background-color: red;
+    animation-name: mybox;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+/* Defining keyframes */
+@keyframes movingbox {
+    from{
+        translate: 0 0;
+    }
+    to{
+        translate: 200px 0;
+    }
+}
+/* Another type of defining keyframes by telling percentages of the total animation duration*/
+/* More the keyframes smoother your animation will be */
+@keyframes mybox {
+    0%{
+        translate: 0 0;
+    }
+    25%{
+        translate: 150px 0;
+        rotate: 90deg;
+    }
+    50%{
+        translate: 150px 150px;
+        rotate: 180deg;
+    }
+    75%{
+        translate: 0 150px;
+        rotate: 270deg;
+    }
+    100%{
+        translate: 0 0;
+        rotate: 360deg;
+    }
+}
+
+.section3{overflow: auto;}
+.section3 .sq{
+    margin: 10px auto;
+}
+.section3 .sq1{
+    background-color: red;
+    transition: width 1s ease;
+}
+.section3 .sq1:hover{
+    width: 600px;
+}
+
+.section3 .sq2{
+    background-color: blue;
+    transition: width 1s ease,height 1s ease;
+}
+.section3 .sq2:hover{
+    height: 300px;
+    width: 500px;
+}
+
+.section3 .sq3{
+    background-color: green;
+    transition: all 1s ease;
+}
+.section3 .sq3:hover{
+    height: 50px;
+    width: 200px;
+}

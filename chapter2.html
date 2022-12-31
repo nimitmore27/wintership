@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinterShip - Chapter 2</title>
+    <!-- There are 3 types of declaring and writing css -->
+
+    <!-- 1.Inline css : written inside the tag to specify the css properties of a element, using style attribute and providing css properties in single or double quotes as 'property:value', we can add multiple properties separted by semi-colon ; -->
+    <!-- e.g. <div style='height:150px;width:150px'></div> -->
+    
+    <!-- 2.Internal css : written inside <style> tag by using various css selectors, css selectors are discussed further -->
+    <!-- e.g. for internal css is given below to give background color to body by using "tag selector" -->
+    <style>
+        /* syntax for Internal CSS is as follows */
+        /* 
+            selector{
+                property-name : value;
+                property-name : value;
+            }
+        */
+        /* every property is separated by semi-colon ; */
+        body{
+            background-color: rgb(183, 255, 231);
+        }
+    </style>
+
+    <!-- 3.External css : written inside separate file with extension (.css), external css must be linked with the html file using link tag, relation as stylesheet to apply css on the webpage e.g. as follows -->
+    <!-- linking css file using link tag  -->
+    <link rel="stylesheet" href="css/chapter2.css">
+    <!-- In VS code press and hold 'Ctrl' key and click on the file name to open the file -->
+    <!-- refer chapter2.css for css notes  -->
+</head>
+<body>
+    <!-- CSS for current webpage i.e. chapter2.html will be written inside chapter2.css -->
+
+    <header>
+        <!-- ./ represents current folder's index file -->
+        <!-- ../ represents going backward in a folder -->
+        <a href="./"> &lt;-Chapter 1</a>
+        <!-- <a href="../"> &lt;-Chapter 1</a> -->
+        <a href="chapter3.html">Chapter 3 -></a>
+    </header>
+    <!-- CSS Selectors : tag selector, id selector, class selector, universal selectors these are some basic selectors for css -->
+    
+    <!-- 
+        Tag selector : using tag name as css selector we can apply css to all elements of same tag.
+        NOTE : In CSS the colour is spelled as 'color'.
+        e.g.
+        body{
+            background-color : black;
+        } 
+    -->
+
+    <!-- 
+        Id selector : In html, an element is given a unique 'id' as attribute to uniquely identity the element.
+        ID of the element must be unique and no other element should have same id. also one element can't have multiple IDs
+        # (hash tag) is used to denote id in css
+        e.g. <div id='mydiv'></div> here div tag has given id as mydiv so to apply css on this perticular div we can use id selector as follows
+        #mydiv{
+            background-color : pink;
+        }
+     -->
+
+     <!-- 
+        Class selector : In html, an element/s is/are given a class that can be used to identify the element/s.
+        one class can be given to multiple elements i.e. multiple elements can have same class
+        one element can have multiple classes
+        
+        . (period / dot) is used ti denote class in css
+
+        e.g. <p class='center bgred'></p>
+            <div class='center mydiv bgdark'></div> 
+            in above example the elements are given classes according to their need, we can apply css to them as follows.
+
+            .center{
+                text-align : center;
+            }
+            .bgred{
+                background-color : red;
+            }
+            .bgdark{
+                background-color : $454545
+            }
+            .mydiv{
+                color : white; 
+            }
+      -->
+
+      <!-- 
+        Universal Selector : * is used as universal selector to apply css to all the elements
+       -->
+
+    <h1>Chapter 2</h1>
+    <h2><a href="chapter3.html">Chapter 3</a>File will have CSS Example & Outputs</h2>
+
+    <div>
+        <h2>Information about css and css selectors</h2>
+        <h3>Types of css</h3>
+        <!-- display property is changed to keep both list side by side, More details about display properties will be in css file -->
+        <!-- id is given to following div -->
+        <div style="display:flex" id="mypara">
+            <!-- <ol> stands for ordered list and <li> stands for list item -->
+                <ol>
+                    <li>Inline css</li>
+                    <li class="second-li bgred">Internal css</li>
+                    <li>External css</li>
+                </ol>
+            <!-- <ul> stands for ordered list and <li> stands for list item -->
+                <ul>
+                    <li>Inline css</li>
+                    <li class="second-li">Internal css</li>
+                    <li>External css</li>
+                </ul>
+            </div>
+            <!-- type attribute specifies the list type -->
+            <ul type="square">
+                <li>Inline css : written inside the tag to specify the css properties of a element, using style attribute and providing css properties in single or double quotes as 'property:value', we can add multiple properties separted by semi-colon ;</li>
+                <li class="second-li">Internal css : written inside &lt;style&gt; tag by using various css selectors</li>
+                <li>External css : written inside separate file with extension (.css), external css must be linked with the html file using link tag, relation as stylesheet to apply css on the webpage</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Types of css selectors</h3>
+            <ul>
+                <li>Tag Selector : using tag name as css selector we can apply css to all elements of same tag.</li>
+                <li class="second-li">Id Selector : In html, an element is given a unique 'id' as attribute to uniquely identity the element.
+                    ID of the element must be unique and no other element should have same id. also one element can't have multiple IDs
+                    # (hash tag) is used to denote id in css</li>
+                <li>Class Selector : In html, an element/s is/are given a class that can be used to identify the element/s.
+                    one class can be given to multiple elements i.e. multiple elements can have same class
+                    one element can have multiple classes</li>
+                <li>Universal Selector : * is used as universal selector to apply css to all the elements</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Which css will be applied?</h3>
+            <p>The properties written later are applied on the elements.</p>
+
+            <h3>CSS priority</h3>
+            <p>css with !important > inline css > external css</p>
+
+            <h3>which css should be prefered to write?</h3>
+            <p>It depends on the developer, to organize the files and keep the code clean it is recommened to use external css</p>
+        </div>
+    
+    <a href="css/chapter2.css">Check CSS File</a>
+    <!-- Added Inline css to change height of the footer element -->
+    <footer style="height: 15vh;">
+        <a href="./"> &lt;-Chapter 1</a>
+        <a href="chapter3.html">Chapter 3 -></a>
+    </footer>
+</body>
+</html>

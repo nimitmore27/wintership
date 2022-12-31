@@ -1,0 +1,166 @@
+/* Basic CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 12vh;
+    /* To align elements we will use display flex */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgb(55, 55, 55);
+    color: white;
+    /* Color won't be applied to 'a' tag as they have predefined color properties so we need to specify them separately */
+    font-size: 1.2rem;
+    /* 1rem = 16px */
+}
+/* using white-space to specify element inside another element hover your mouse over the selector to get an idea about what is going to be selected, in this case case an anchor tag will be selected which is anywhere inside an element with class navbar */
+.navbar a{
+    color: white;
+    /* 'a' tag has some predefined css decoration which we can remove by text decoration property */
+    text-decoration: none;
+}
+
+/* to add some interaction with our navbar we will add effect when someone hover on it */
+
+/* belown selector means if someone hover over an anchor tag which is inside a element with class navbar  */
+.navbar a:hover{
+    color: rgb(255, 183, 16);
+    text-decoration: revert;
+    /* revert is the value which changes the current css value to the predefined css value */
+}
+/* selecting h1 inside a element with class navbar */
+.navbar h1{
+    /* usually the text related elements get a 'I' type cursor pointer and they can select the text so here we can change this by using any of the two properties as follows  */
+    user-select: none;
+    cursor: default;
+}
+
+.container{
+    width: 100%;
+    background-color: beige;
+}
+.title{
+    text-align: center;
+    padding: 5px 0;
+}
+.mygrid{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+.section{
+    width: 90%;
+    height: 500px;
+    border: 1px solid black;
+}
+.rec{
+    height: 105px;
+    /* max-content will give width according to sentance legth */
+    /* width: max-content; */
+
+    width: 50%;
+    background-color: rgb(255, 100, 100);
+    overflow: auto;
+}
+.section1 .rec{
+    position: relative;
+    /* we can position element using values for top, bottom, left & right */
+    top: 15px;
+    left: 50px;
+}
+.section2 .rec{
+    position: sticky;
+    top: 50px;
+}
+.section3 .rec1{
+    /* The rec with position absolute will come out of the HTML flow and will move freely with relative to the screen i.e. viewport */
+    position: absolute;
+    /* and because it don't follow the HTML flow we need to specify the height and with to this element separelty */
+    width: max-content;
+}
+.section3 .rec.rec1{
+    top: 120vh;
+}
+
+.section4 .rec{
+    position: fixed;
+    top: 50vh;
+    width: 550px;
+}
+
+/* Position absolute with respective/relative to its closest ancestor */
+.section5{
+    /* making section 5 relative so that the rec inside it can move relative to section5 */
+    position: relative;
+}
+
+.section5 .rec{
+    position: absolute;
+    bottom: 50px;
+}
+
+/* For Z Index we will color each rec in section 6 */
+.section6{
+    position: relative;
+}
+.section6 .recs{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.section6 .recs.rec1{
+    background-color: red;
+    left: 0px;
+}
+.section6 .recs.rec2{
+    background-color: orange;
+    left: 50px;
+}
+.section6 .recs.rec3{
+    background-color: yellow;
+    left: 100px;
+}
+.section6 .recs.rec4{
+    background-color: green;
+    left: 150px;
+}
+.section6 .recs.rec5{
+    background-color: aqua;
+    left: 200px;
+}
+.section6 .recs.rec6{
+    background-color: blue;
+    left: 250px;
+}
+.section6 .recs.rec7{
+    background-color: rebeccapurple;
+    left: 300px;
+}
+
+.footer{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer a:hover{
+    color: rgb(255, 183, 16);
+    text-decoration: revert;
+}
