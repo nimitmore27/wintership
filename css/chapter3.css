@@ -19,7 +19,12 @@
 
     /* box sizing is the property in which the dimensions provided are preserved*/
     box-sizing: border-box;
+    font-size: 1.1rem;
+    /* increasing font-size for all elements */
 }
+/* reverting font size for head elements */
+h1,h2,h3,h4,h5,h6{font-size: revert!important;}
+
 #mydiv1{
     width: 100%;
 

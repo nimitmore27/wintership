@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.1rem;
 }
-
+h1,h2,h3,h4,h5,h6{font-size: revert!important;}
 .navbar{
     position: fixed;
     top: 0;
@@ -47,8 +48,15 @@
 
 body{
     padding-top: 12vh;
+    background-color: beige;
 }
 
 .center-text{
     text-align: center;
+}
+.red-text{
+    color: red;
+}
+.container{
+    padding: 0 2vw;
 }
