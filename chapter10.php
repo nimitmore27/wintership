@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinterShip - Chapter 10</title>
+    <title>WinternShip - Chapter 10</title>
     <link rel="stylesheet" href="css/default.css">
     <style>
-        body {
-            background-color: beige;
-        }
         .container {
             min-height: 100vh;
         }
@@ -20,7 +17,7 @@
 <body>
     <nav class="navbar">
         <a href="chapter9.html">Previous Chapter</a>
-        <h1>WinterShip</h1>
+        <h1>WinternShip</h1>
         <a href="chapter11.php">Next Chapter</a>
     </nav>
     <!-- Partials are the files or the code which we can use anywhere anytime in php by including them so that we don't need to rewrite that code again and again -->
