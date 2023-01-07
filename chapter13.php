@@ -28,6 +28,7 @@ $_GET['next'] = 'chapter14.php';
         <p>A pre-defined code saved in a separate file, which can be included or used in another file can be called as partials</p>
         <h3>How to use partials efficiently?</h3>
         <p>If we know some part of page will be used in all/some webpages as it is, this code can be written as partial & can be used by using include or require methods</p>
+        <p>If we know some part of page will be used in all/some webpages as is it, this code can be written as partial & can be used by using include or require methods</p>
         <br>
         <h2>From Now On we will use partials to keep our code clean & maintain it properly</h2>
         <br><br>
@@ -47,6 +48,7 @@ $_GET['next'] = 'chapter14.php';
     $database = "winternShip";
     $con = mysqli_connect($servername,$username,$password,$database);
     if(!$con){
+    if($con){
         die("Connection Unsuccessful");
     }
     else{
