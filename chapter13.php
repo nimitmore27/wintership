@@ -47,7 +47,6 @@ $_GET['next'] = 'chapter14.php';
     $password = "";
     $database = "winternShip";
     $con = mysqli_connect($servername,$username,$password,$database);
-    if(!$con){
     if($con){
         die("Connection Unsuccessful");
     }
